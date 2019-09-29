@@ -24,6 +24,7 @@ Note: This will create a new query based on the top 10 query terms and return th
 
 #### 1.2.2 Wildcard query search
 Use * as wildcard.
+
 ![wildcard query](./videos/wildcard_query.gif)
 
 #### 1.2.3 Spelling correction
