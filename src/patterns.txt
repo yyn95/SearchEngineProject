@@ -1,0 +1,46 @@
+//
+//  Information retrieval course
+//  First version: Johan Boye 2016
+//
+// In this file you can put your regular expressions
+// for matching non-standard words (like mail addresses).
+//
+// As you have probably already understood, lines beginning
+// with "//" are comments.
+
+// web urls
+// [s]? means "s" repeats zero or more times
+// .+ means repeats any times for non-eol char
+http[s]?://.+
+
+// Twenty-four seven
+\d+/\d+
+
+// regex for xxx-yyyy-zzz
+(\w+-)+\w+
+
+// email
+[.\w]+@[.\w]+
+
+// 2.4.1; 192.168.255.255; 10:30; 12:55:38
+(\d+[\.,:])+(\d+)
+
+// i.e.; e.g.; A.D
+([a-zA-z]\.){2,}
+
+// phone number
+\+\d+
+
+// currency with dollar sign $xxx
+\$\d+
+
+// Tom's; I'll; He'd ...
+\w+'[a-z]+
+
+// 'em (short form of them)
+// add this specific regex for not matching qouted words
+'em
+
+// filenames xyz.filetype; P.S. not okay for filename with literally spaces
+//[\w-]+\.[A-Za-z]{3,}
+[\w-]+\.(doc|xlsx|ppt)
