@@ -1,5 +1,5 @@
 # Search Engine Project
-Search Engine and Information Retriever course project.
+Search Engine and Information Retrieval course project.
 
 ## 1. Supporting functions
 ### 1.1 Search options
